@@ -14,7 +14,7 @@ if(isset($_POST["submit"])){
 $run = mysqli_query($yo , $sybu);
 
 if($run == true){
-    echo " done";
+    echo "  done";
 }else{
     echo "not done";
 }

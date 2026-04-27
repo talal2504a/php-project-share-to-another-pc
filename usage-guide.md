@@ -10,21 +10,11 @@ cline
 
 **Agar PowerShell error aaye (execution policy),** toh yeh try karein:
 
-### Option A: CMD use karein
-```bash
-cmd /c cline
+### Option A
+npx cline
 ```
 
-### Option B: Execution policy change karein (temporary)
-```powershell
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-cline
-```
-
-### Option C: PowerShell mein direct path se run karein
-```powershell
-& "C:\Users\Administrator\AppData\Roaming\npm\cline.cmd"
-```
+Is se ek interactive AI assistant start hoga jo aap se sawal karega ke aap ko kya code chahiye.
 
 **Example:**
 ```bash
