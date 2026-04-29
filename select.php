@@ -15,15 +15,27 @@ echo "<td> id </td>";
 echo " <td> FIRST_NAME </td>";  
 echo " <td> LAST_NAME </td>";
 echo " <td> CITY </td>";
+echo "<td> ACTION </td>";
+
 
     echo "<tr>";
+
+
+
 
 while($result = mysqli_fetch_assoc($data_receiver)){
 echo "<td>"  . $result['id'] . "</td>";
 echo " <td> " . $result['first_name'] . "</td>";
 echo " <td> " . $result['last_name'] . "</td>";
 echo " <td> " . $result['city'] . "</td>";
+
+echo " <td> <a href='edit.php?id=" . $result['id'] . "'>Edit</a> </td>";
+
+
 echo "</tr>";
+
+
+
 };
 
 echo "</center>";
